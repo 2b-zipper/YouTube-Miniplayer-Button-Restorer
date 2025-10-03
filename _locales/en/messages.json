@@ -1,4 +1,8 @@
 {
+  "extensionDescription": {
+    "message": "Restores the missing miniplayer button to YouTube's video player",
+    "description": "Description of the extension shown in Chrome extensions page"
+  },
   "miniplayerButton": {
     "message": "Miniplayer (i)",
     "description": "Tooltip text for the miniplayer button"

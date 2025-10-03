@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "YouTube Miniplayer Button Restorer",
   "version": "0.1.0",
-  "description": "Restores the missing miniplayer button to YouTube's video player",
+  "description": "__MSG_extensionDescription__",
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
