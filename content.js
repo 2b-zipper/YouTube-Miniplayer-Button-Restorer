@@ -5,7 +5,6 @@
   'use strict';
 
   const SELECTORS = {
-    PLAYER: '#movie_player',
     RIGHT_CONTROLS: '.ytp-right-controls',
     SETTINGS_BUTTON: '.ytp-settings-button',
     MINIPLAYER_BUTTON: '.ytp-miniplayer-button'
@@ -35,14 +34,7 @@
   `;
 
   function toggleMiniplayer() {
-    const player = document.querySelector(SELECTORS.PLAYER);
-    
-    if (player && typeof player.toggleMiniplayer === 'function') {
-      player.toggleMiniplayer();
-      return;
-    }
-
-    // Fallback: simulate 'i' key press
+    // Simulate 'i' key press
     const keyEvent = new KeyboardEvent('keydown', {
       key: BUTTON_CONFIG.keyboardShortcut,
       code: 'KeyI',
@@ -88,7 +80,6 @@
     const miniplayerButton = createMiniplayerButton();
     settingsButton.parentNode.insertBefore(miniplayerButton, settingsButton.nextSibling);
     
-    console.log('YouTube Miniplayer Button: Added');
     return true;
   }
 
@@ -98,9 +89,7 @@
       const settingsButton = document.querySelector(SELECTORS.SETTINGS_BUTTON);
 
       if (rightControls && settingsButton) {
-        if (insertMiniplayerButton()) {
-          console.log('YouTube Miniplayer Button: Initialized');
-        }
+        insertMiniplayerButton();
       }
     });
 
