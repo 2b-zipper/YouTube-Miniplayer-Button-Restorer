@@ -1,0 +1,10 @@
+{
+  "miniplayerButton": {
+    "message": "Miniplayer (i)",
+    "description": "Tooltip text for the miniplayer button"
+  },
+  "miniplayerButtonShort": {
+    "message": "Miniplayer",
+    "description": "Short text for the miniplayer button without shortcut key"
+  }
+}

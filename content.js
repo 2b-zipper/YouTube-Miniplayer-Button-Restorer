@@ -11,12 +11,17 @@
     MINIPLAYER_BUTTON: '.ytp-miniplayer-button'
   };
 
+  function getLocalizedText() {
+    return {
+      title: chrome.i18n.getMessage('miniplayerButton'),
+      ariaLabel: chrome.i18n.getMessage('miniplayerButton'),
+      tooltipTitle: chrome.i18n.getMessage('miniplayerButton'),
+      titleNoTooltip: chrome.i18n.getMessage('miniplayerButtonShort')
+    };
+  }
+
   const BUTTON_CONFIG = {
     className: 'ytp-button ytp-miniplayer-button',
-    title: 'Miniplayer (i)',
-    ariaLabel: 'Miniplayer (i)',
-    tooltipTitle: 'Miniplayer (i)',
-    titleNoTooltip: 'Miniplayer',
     keyboardShortcut: 'i'
   };
 
@@ -50,12 +55,13 @@
   }
 
   function createMiniplayerButton() {
+    const localizedText = getLocalizedText();
     const button = document.createElement('button');
     button.className = BUTTON_CONFIG.className;
-    button.setAttribute('title', BUTTON_CONFIG.title);
-    button.setAttribute('aria-label', BUTTON_CONFIG.ariaLabel);
-    button.setAttribute('data-tooltip-title', BUTTON_CONFIG.tooltipTitle);
-    button.setAttribute('data-title-no-tooltip', BUTTON_CONFIG.titleNoTooltip);
+    button.setAttribute('title', localizedText.title);
+    button.setAttribute('aria-label', localizedText.ariaLabel);
+    button.setAttribute('data-tooltip-title', localizedText.tooltipTitle);
+    button.setAttribute('data-title-no-tooltip', localizedText.titleNoTooltip);
     button.setAttribute('aria-keyshortcuts', BUTTON_CONFIG.keyboardShortcut);
     button.innerHTML = SVG_ICON;
 

@@ -1,0 +1,10 @@
+{
+  "miniplayerButton": {
+    "message": "ミニプレーヤー (i)",
+    "description": "ミニプレーヤーボタンのツールチップテキスト"
+  },
+  "miniplayerButtonShort": {
+    "message": "ミニプレーヤー",
+    "description": "ショートカットキーなしのミニプレーヤーボタンの短いテキスト"
+  }
+}
