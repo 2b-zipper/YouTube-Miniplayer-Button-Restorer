@@ -16,7 +16,15 @@ A Chrome extension that restores the missing miniplayer button to YouTube's vide
 
 ## Installation
 
-You need to manually install this as a Chrome extension:
+### From Chrome Web Store (Recommended)
+
+Install directly from the Chrome Web Store:
+
+**[Install from Chrome Web Store](https://chromewebstore.google.com/detail/youtube-miniplayer-button/bfbihleaagnbgnoapdlabkgmenedkopf)**
+
+### Manual Installation
+
+You can also manually install this as a Chrome extension:
 
 1. Download (or clone) this repository
 2. Open `chrome://extensions/` in Chrome

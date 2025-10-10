@@ -16,7 +16,15 @@ YouTubeの動画プレーヤーコントロールから削除されたミニプ�
 
 ## インストール方法
 
-Chrome拡張機能として手動でインストールする必要があります：
+### Chrome Web Storeから（推奨）
+
+Chrome Web Storeから直接インストールできます：
+
+**[Chrome Web Storeからインストール](https://chromewebstore.google.com/detail/youtube-miniplayer-button/bfbihleaagnbgnoapdlabkgmenedkopf)**
+
+### 手動インストール
+
+Chrome拡張機能として手動でインストールすることもできます：
 
 1. このリポジトリをダウンロード（またはクローン）
 2. Chromeで`chrome://extensions/`を開く
