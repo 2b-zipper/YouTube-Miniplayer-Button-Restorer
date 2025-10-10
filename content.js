@@ -4,6 +4,9 @@
 (function() {
   'use strict';
 
+  // Cross-browser compatibility
+  const browserAPI = typeof browser !== 'undefined' ? browser : chrome;
+
   const SELECTORS = {
     RIGHT_CONTROLS: '.ytp-right-controls',
     RIGHT_CONTROLS_RIGHT: '.ytp-right-controls-right',
@@ -31,8 +34,8 @@
   };
 
   function createButton(isNew) {
-    const text = chrome.i18n.getMessage('miniplayerButton');
-    const shortText = chrome.i18n.getMessage('miniplayerButtonShort');
+    const text = browserAPI.i18n.getMessage('miniplayerButton');
+    const shortText = browserAPI.i18n.getMessage('miniplayerButtonShort');
     
     const button = document.createElement('button');
     button.className = 'ytp-button ytp-miniplayer-button';
