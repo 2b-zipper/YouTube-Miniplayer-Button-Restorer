@@ -2,7 +2,10 @@
 
 YouTubeの動画プレーヤーコントロールから削除されたミニプレーヤーボタンを復活させるChrome拡張機能です。
 
-![Screenshot](screenshot.png)
+<p align="center">
+  <img src="screenshot_new_ui.png" alt="New UI Screenshot" width="45%">
+  <img src="screenshot_old_ui.png" alt="Old UI Screenshot" width="45%">
+</p>
 
 *[English README](README.md)*
 

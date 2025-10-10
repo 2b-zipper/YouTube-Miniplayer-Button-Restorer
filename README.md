@@ -2,7 +2,10 @@
 
 A Chrome extension that restores the missing miniplayer button to YouTube's video player controls.
 
-![Screenshot](screenshot.png)
+<p align="center">
+  <img src="screenshot_new_ui.png" alt="New UI Screenshot" width="45%">
+  <img src="screenshot_old_ui.png" alt="Old UI Screenshot" width="45%">
+</p>
 
 *[日本語README](README_ja.md)*
 
