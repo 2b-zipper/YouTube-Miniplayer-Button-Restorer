@@ -1,6 +1,8 @@
 # YouTube Miniplayer Button Restorer
 
-YouTubeの動画プレーヤーコントロールから削除されたミニプレーヤーボタンを復活させるChrome拡張機能です。
+YouTubeの動画プレーヤーコントロールから削除されたミニプレーヤーボタンを復活させるブラウザ拡張機能です。
+
+**Chrome・Firefoxに対応**
 
 <p align="center">
   <img src="screenshot_new_ui.png" alt="New UI Screenshot" width="45%">
@@ -16,21 +18,33 @@ YouTubeの動画プレーヤーコントロールから削除されたミニプ�
 
 ## インストール方法
 
-### Chrome Web Storeから（推奨）
+### Chrome
+
+#### Chrome Web Storeから（推奨）
 
 Chrome Web Storeから直接インストールできます：
 
 **[Chrome Web Storeからインストール](https://chromewebstore.google.com/detail/youtube-miniplayer-button/bfbihleaagnbgnoapdlabkgmenedkopf)**
 
-### 手動インストール
-
-Chrome拡張機能として手動でインストールすることもできます：
+#### 手動インストール（Chrome）
 
 1. このリポジトリをダウンロード（またはクローン）
 2. Chromeで`chrome://extensions/`を開く
 3. 右上の「デベロッパーモード」をオンにする
 4. 「非パッケージ拡張機能を読み込む」をクリック
 5. ダウンロードしたフォルダを選択
+
+### Firefox
+
+#### 手動インストール（Firefox）
+
+1. このリポジトリをダウンロード（またはクローン）
+2. Firefoxで`about:debugging`を開く
+3. 左サイドバーの「このFirefox」をクリック
+4. 「一時的なアドオンを読み込む」をクリック
+5. ダウンロードしたフォルダから`manifest.json`ファイルを選択
+
+*注: Firefox 109以降が必要です*
 
 ## 使い方
 

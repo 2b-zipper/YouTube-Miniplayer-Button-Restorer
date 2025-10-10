@@ -1,6 +1,8 @@
 # YouTube Miniplayer Button Restorer
 
-A Chrome extension that restores the missing miniplayer button to YouTube's video player controls.
+A browser extension that restores the missing miniplayer button to YouTube's video player controls.
+
+**Supports Chrome and Firefox**
 
 <p align="center">
   <img src="screenshot_new_ui.png" alt="New UI Screenshot" width="45%">
@@ -16,21 +18,33 @@ A Chrome extension that restores the missing miniplayer button to YouTube's vide
 
 ## Installation
 
-### From Chrome Web Store (Recommended)
+### Chrome
+
+#### From Chrome Web Store (Recommended)
 
 Install directly from the Chrome Web Store:
 
 **[Install from Chrome Web Store](https://chromewebstore.google.com/detail/youtube-miniplayer-button/bfbihleaagnbgnoapdlabkgmenedkopf)**
 
-### Manual Installation
-
-You can also manually install this as a Chrome extension:
+#### Manual Installation (Chrome)
 
 1. Download (or clone) this repository
 2. Open `chrome://extensions/` in Chrome
 3. Turn on "Developer mode" in the top right
 4. Click "Load unpacked"
 5. Select the downloaded folder
+
+### Firefox
+
+#### Manual Installation (Firefox)
+
+1. Download (or clone) this repository
+2. Open `about:debugging` in Firefox
+3. Click "This Firefox" in the left sidebar
+4. Click "Load Temporary Add-on"
+5. Select the `manifest.json` file from the downloaded folder
+
+*Note: Requires Firefox 109 or later*
 
 ## Usage
 
