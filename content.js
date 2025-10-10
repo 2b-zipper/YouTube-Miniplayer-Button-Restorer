@@ -45,17 +45,38 @@
     button.setAttribute('data-title-no-tooltip', shortText);
     button.setAttribute('aria-keyshortcuts', 'i');
     
+    // Create SVG element safely without innerHTML
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    
     if (isNew) {
       button.setAttribute('data-priority', '11');
-      button.innerHTML = `<svg fill="none" height="24" viewBox="0 0 24 24" width="24">
-        <path d="${ICONS.new}" fill="white"></path>
-      </svg>`;
+      svg.setAttribute('fill', 'none');
+      svg.setAttribute('height', '24');
+      svg.setAttribute('viewBox', '0 0 24 24');
+      svg.setAttribute('width', '24');
+      path.setAttribute('d', ICONS.new);
+      path.setAttribute('fill', 'white');
+      svg.appendChild(path);
     } else {
-      button.innerHTML = `<svg version="1.1" viewBox="0 0 36 36" height="100%" width="100%">
-        <use class="ytp-svg-shadow" xlink:href="#ytp-id-miniplayer"></use>
-        <path id="ytp-id-miniplayer" d="${ICONS.old}" fill="#fff"></path>
-      </svg>`;
+      svg.setAttribute('version', '1.1');
+      svg.setAttribute('viewBox', '0 0 36 36');
+      svg.setAttribute('height', '100%');
+      svg.setAttribute('width', '100%');
+      
+      const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+      use.setAttribute('class', 'ytp-svg-shadow');
+      use.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#ytp-id-miniplayer');
+      
+      path.setAttribute('id', 'ytp-id-miniplayer');
+      path.setAttribute('d', ICONS.old);
+      path.setAttribute('fill', '#fff');
+      
+      svg.appendChild(use);
+      svg.appendChild(path);
     }
+    
+    button.appendChild(svg);
 
     button.addEventListener('click', (e) => {
       e.preventDefault();
