@@ -40,7 +40,7 @@ Install directly from the Chrome Web Store:
 
 Install directly from the Firefox Add-ons site:
 
-**[Install from Firefox Add-ons](https://addons.mozilla.org/ja/firefox/addon/yt-miniplayer-button-restorer/)**
+**[Install from Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/yt-miniplayer-button-restorer/)**
 
 #### Manual Installation (Firefox)
 
