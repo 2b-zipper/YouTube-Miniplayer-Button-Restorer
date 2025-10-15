@@ -40,7 +40,7 @@ Chrome Web Storeから直接インストールできます：
 
 Firefox Add-onsから直接インストールできます：
 
-**[Firefox Add-onsからインストール](https://addons.mozilla.org/ja/firefox/addon/yt-miniplayer-button-restorer/)**
+**[Firefox Add-onsからインストール](https://addons.mozilla.org/addon/yt-miniplayer-button-restorer/)**
 
 #### 手動インストール（Firefox）
 
